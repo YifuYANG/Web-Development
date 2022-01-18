@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel = "stylesheet" th:href ="@{/style.css}">
+<head>
+    <meta charset="UTF-8">
+    <title>NoteIt</title>
+</head>
+<body>
+<div class="header">
+    <img th:src="@{/image/logo.jpg}" alt="logo">
+    <h1><i>NoteIt</i></h1>
+    <p><i>For all your note-taking needs</i></p>
+    <hr size="3" width="100%" color="black">
+</div>
+
+<div class="title_name">
+    <h1>My Notes</h1>
+    <a href='http://localhost:8080/create'><button type="button" class="button_1">Back</button></a>
+</div>
+
+<div class ="main">
+<table class="table">
+    <tr>
+        <th class="th_create">Created</th>
+        <th class="th_edited">Last Edited</th>
+        <th class="th_title">Note Title</th>
+        <th class="th_version">Versions</th>
+        <th></th>
+    </tr>
+
+    <tr th:each="notes : ${notes}">
+        <td><span th:text="${#dates.format(notes.value.getDateCreated(),'dd-MMM-yyyy')}"></span></td>
+        <td><span th:text="${#dates.format(notes.value.getDateEdited(),'dd-MMM-yyyy')}"></span></td>
+        <td><span th:text="${notes.value.getTitle()}"></span></td>
+        <td>1</td>
+        <td><a th:href="@{/view/{id}(id=${notes.key})}"><button type="button" class="button_3">View</button></a></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

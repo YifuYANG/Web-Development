@@ -1,0 +1,195 @@
+.button
+{
+    background-color: black;
+    border: none;
+    color: white;
+    width: 500px;
+    height: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+.content
+{
+    position: absolute;
+    top:22%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+body
+{
+    margin: 0;
+}
+
+.header
+{
+    height: 100px;
+    font-family: italic;
+}
+
+.header img
+{
+    width:100px;
+    height:100px;
+    float: left;
+}
+
+
+.title_name h1
+{
+    position: absolute;
+    top:14%;
+    left: 20%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.button_1
+{
+    position: absolute;
+    top:16%;
+    left: 80%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.title
+{
+    width: 1500px;
+    height: 30px;
+    position: absolute;
+    top:22%;
+    left: 52.1%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.note
+{
+    width: 1500px;
+    height: 300px;
+    position: absolute;
+    top:36%;
+    left: 52.1%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.button_2
+{
+    position: absolute;
+    top:52%;
+    left: 78.7%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: black;
+    text-align: center;
+    border-radius: 12px;
+    color: white;
+    width: 150px;
+    height: 35px;
+    border: none;
+}
+
+.title_barh
+{
+    position: absolute;
+    top:21.5%;
+    left: 16.9%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.title_barj
+{
+    position: absolute;
+    top:24.5%;
+    left: 16.9%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.table
+{
+    text-align: left;
+    border-spacing: 0px 25px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding-top: 130px;
+}
+.table th
+{
+    border-collapse: collapse;
+}
+
+
+
+.th_create
+{
+    border-bottom: 2px solid black;
+    width: 10%;
+}
+
+.th_edited
+{
+    border-bottom: 2px solid black;
+    width: 15%;
+}
+.th_title
+{
+    border-bottom: 2px solid black;
+    width: 65%;
+}
+
+.th_version
+{
+    border-bottom: 2px solid black;
+    width: 10%;
+}
+
+.main
+{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.view_table
+{
+    width: 100%;
+    margin-top: 200px;
+    padding-left: 200px;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+
+.view_table th
+{
+    width: 10%;
+    text-align: left;
+    height: fit-content;
+}
+
+.main_1
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view_table td
+{
+    height: fit-content;
+}

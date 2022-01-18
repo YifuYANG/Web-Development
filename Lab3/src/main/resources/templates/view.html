@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel = "stylesheet" th:href ="@{/style.css}">
+<head>
+    <meta charset="UTF-8">
+    <title>NoteIt</title>
+</head>
+<body>
+<div class="header">
+    <img th:src="@{/image/logo.jpg}" alt="logo">
+    <h1><i>NoteIt</i></h1>
+    <p><i>For all your note-taking needs</i></p>
+    <hr size="3" width="100%" color="black">
+</div>
+
+<div class="title_name">
+    <h1>View Note</h1>
+    <a href='http://localhost:8080/browse'><button type="button" class="button_1">Back</button></a>
+</div>
+
+<div class="main_1">
+    <table class="view_table">
+        <tr>
+            <th>Title:</th><td th:text="${note.getTitle()}"></td>
+        </tr>
+        <tr>
+            <th>Date Created:</th><td th:text= "${#dates.format(note.getDateCreated(),'dd-MMM-yyyy')}"></td>
+        </tr>
+        <tr>
+            <th style="vertical-align: top">Note:</th>
+            <td><textarea rows="20" cols="160" style="border: 1px solid black; resize: none" readonly th:text="${note.getNote()}"></textarea>
+            </td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
