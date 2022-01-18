@@ -1,0 +1,46 @@
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-family: "Times New Roman",Times,Serif;
+    text-align:center;
+    border-spacing:1em;
+}
+
+td:nth-child(2)
+{
+    text-align:left;
+}
+
+
+th:nth-child(n)
+{
+    background-color: #eeeeee;
+}
+
+td:nth-child(11)
+{
+    text-align:center;
+    font-family: "Courier",Courier New,Serif;
+}
+
+.win
+{
+    color: #eeeeee;
+    padding: 1px;
+    background-color: green;
+}
+
+.draw
+{
+    color: #eeeeee;
+    padding: 1px;
+    background-color:#333;
+}
+.loss
+{
+    color: #eeeeee;
+    padding: 1px;
+    background-color:red;
+}
