@@ -1,0 +1,34 @@
+<div xmlns:th="http://www.w3.org/1999/xhtml">
+    <div>
+        <script type="text/javascript" src="code.js"></script>
+        <h2>User Details:</h2>
+        <h3><span th:text="${person.firstname}"></span><span th:text="${person.surname}"></span></h3>
+    </div>
+    <table class="table" style="width: 18%" id="phones">
+        <thead>
+        <tr>
+            <td><h3 style="text-align: center">Type</h3></td>
+            <td><h3 style="text-align: center">Number</h3></td>
+            <td></td>
+        </tr>
+        </thead>
+        <tr th:each="number : ${person.number}" th:id="|rw_${number.id}|">
+            <td th:text="${number.type}"></td>
+            <td th:text="${number.number}"></td>
+            <td>
+                <button style="float: right" th:onclick="|removePhone(${number.id})|">Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td><select id="type_1">
+                <option value="Home" selected>Home</option>
+                <option value="Work" selected>Work</option>
+                <option value="Mobile" selected>Mobile</option>
+            </select></td>
+            <td><input type="text" id="phone_number"></td>
+            <td>
+                <button th:onclick="|addNumbers(${person.id})|">Add</button>
+            </td>
+        </tr>
+    </table>
+</div>

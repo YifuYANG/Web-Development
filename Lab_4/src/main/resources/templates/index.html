@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>user profile</title>
+    <script type="text/javascript" src="code.js"></script>
+
+    <div class="header">
+        <h2>People</h2>
+    </div>
+</head>
+<body>
+<div>
+    <table class="table" style="width: 26%" id="people">
+        <thead>
+        <tr>
+            <td><h3 style="text-align: center">Surname</h3></td>
+            <td><h3 style="text-align: center">Firstname</h3></td>
+            <td></td>
+        </tr>
+        </thead>
+        <tr th:each="person : ${people}" th:id="|row_${person.id}|">
+            <td th:text="${person.firstname}"></td>
+            <td th:text="${person.surname}"></td>
+            <td>
+                <button th:onclick="|viewPhone(${person.id})|" >View</button>
+                <button th:onclick="|removePerson(${person.id})|" style="float: right">Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td><textarea style="border: 1px solid black; resize: none" type="text" id="surname"></textarea></td>
+            <td><textarea style="border: 1px solid black; resize: none" type="text" id="firstname"></textarea></td>
+            <td>
+                <button onclick="addPerson()">Add</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="view">
+
+</div>
+
+</body>
+</html>

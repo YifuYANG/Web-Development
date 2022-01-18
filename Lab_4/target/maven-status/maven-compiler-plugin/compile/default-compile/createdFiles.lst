@@ -1,0 +1,6 @@
+app\PersonController.class
+app\Repository\PersonRepository.class
+app\Repository\PhoneRepository.class
+app\MyApplication.class
+app\Entity\Person.class
+app\Entity\Phone.class
